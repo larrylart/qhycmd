@@ -5,7 +5,9 @@ qhyccd command line camera utility
 
 ```shell
 apt-get install build-essential git cmake gawk gcc g++ yasm autoconf autoconf-archive libtool m4 automake libevent-dev pkg-config
-apt-get install libnova-dev libcfitsio-dev libusb-1.0-0-dev libusb-dev libusb-1.0 zlib1g-dev libudev-dev libgsl-dev build-essential cmake git libjpeg-dev libcurl4-gnutls-dev libtiff-dev libfftw3-dev libftdi-dev libgps-dev libraw-dev libdc1394-22-dev libgphoto2-dev libboost-dev libboost-regex-dev librtlsdr-dev liblimesuite-dev libftdi1-dev libavcodec-dev libavdevice-dev
+apt-get install libnova-dev libcfitsio-dev libusb-1.0-0-dev libusb-dev libusb-1.0 zlib1g-dev libudev-dev libgsl-dev build-essential cmake git libjpeg-dev libcurl4-gnutls-dev libtiff-dev libfftw3-dev 
+apt-get install libftdi-dev libgps-dev libraw-dev libdc1394-22-dev libgphoto2-dev libboost-dev libboost-regex-dev librtlsdr-dev liblimesuite-dev libftdi1-dev libavcodec-dev libavdevice-dev
+apt-get install libwxgtk3.0-gtk3-dev wx-common wx3.0-i18n libindi-dev gettext libx11-dev
 ```
 
 OpenCV or install manually:  
