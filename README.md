@@ -1,18 +1,20 @@
 # qhycmd
 qhyccd command line camera utility 
 
-** INSTALL QHYCCD SDK
+## INSTALL QHYCCD SDK
 
- > wget https://github.com/qhyccd-lzr/QHYCCD_Linux_New/blob/master/qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8.tar.gz
- > gzip -dc qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8.tar.gz | tar -xvf -
- > cd qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8/install_scripts/
- > ./linux_install_qhyccd_sdk_driver.sh
+ bash> wget https://github.com/qhyccd-lzr/QHYCCD_Linux_New/blob/master/qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8.tar.gz
+ bash> gzip -dc qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8.tar.gz | tar -xvf -
+ bash> cd qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8/install_scripts/
+ bash> ./linux_install_qhyccd_sdk_driver.sh
  
  
-** BUILD QHYCMD
+## BUILD QHYCMD
 
+```shell
 make
 
+```shell
 Usage: qhycmd [-h] [-e <double>] [-cg <num>] [-co <num>] [-b <num>] [-no <num>] [-c <double>] [-wt] [-bin <str>] [-rm <num>] [-nos] [-f <str>] [-t <str>] [-fmt <str>] [-lc] [-lr] [-d] [-gui]
   -h, --help                    Show this help message
   -e, --exposure=<double>       Exposure time (seconds)
