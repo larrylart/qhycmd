@@ -3,16 +3,20 @@ qhyccd command line camera utility
 
 ## INSTALL QHYCCD SDK
 
+```shell
+
  bash> wget https://github.com/qhyccd-lzr/QHYCCD_Linux_New/blob/master/qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8.tar.gz
  bash> gzip -dc qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8.tar.gz | tar -xvf -
  bash> cd qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8/install_scripts/
  bash> ./linux_install_qhyccd_sdk_driver.sh
- 
+``` 
  
 ## BUILD QHYCMD
 
 ```shell
 make
+
+```
 
 ```shell
 Usage: qhycmd [-h] [-e <double>] [-cg <num>] [-co <num>] [-b <num>] [-no <num>] [-c <double>] [-wt] [-bin <str>] [-rm <num>] [-nos] [-f <str>] [-t <str>] [-fmt <str>] [-lc] [-lr] [-d] [-gui]
@@ -35,4 +39,5 @@ Usage: qhycmd [-h] [-e <double>] [-cg <num>] [-co <num>] [-b <num>] [-no <num>] 
   -d, --debug                   Run in debug mode
   -gui, --display               Run with GUI mode
 
+```
 
