@@ -23,7 +23,7 @@ WX_LIBS = $(shell wx-config --libs)
 # wx-config --cxxflags
 WX_CXXFLAGS = $(shell wx-config --cxxflags)
 
-CXXFLAGS = -Wall -Wsign-compare -std=c++11 -I. -I $(COMP_INC1)  -I$(COMP_INC2) $(OPENCV_CXXFLAGS) $(WX_CXXFLAGS)
+CXXFLAGS = -Wall -Wsign-compare -std=c++11 -DwxUSE_GUI=0 -I. -I $(COMP_INC1)  -I$(COMP_INC2) $(OPENCV_CXXFLAGS) $(WX_CXXFLAGS)
 EXTRALIBS = -lqhyccd -lusb-1.0 -pthread -lcfitsio $(OPENCV_LIBS) $(WX_LIBS)
 
 CP = cp -f

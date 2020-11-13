@@ -83,6 +83,7 @@ bool CQhyCmd::OnCmdLineParsed(wxCmdLineParser& parser)
 	long int nTmp = 0;
 	double fTmp = 0;
 	
+	
 	// :: check if camera object is available
 	if( m_pQhyCamera != NULL )
 	{
@@ -159,7 +160,7 @@ bool CQhyCmd::OnCmdLineParsed(wxCmdLineParser& parser)
 // qhycmd main app init
 ////////////////////////////////////////////////////////////////////
 bool CQhyCmd::OnInit()
-{
+{	
 	//printf( "CQhyCmd :: START INIT\n" );
 		
 	m_strUserDir = wxStandardPaths::Get().GetUserDataDir();

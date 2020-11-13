@@ -33,13 +33,13 @@ Example for a version qhyccd sdk for ARMV8, please download the relevant sdk fro
 
 ```shell
 
- bash> wget https://github.com/qhyccd-lzr/QHYCCD_Linux_New/blob/master/qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8.tar.gz
- bash> gzip -dc qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8.tar.gz | tar -xvf -
- bash> cd qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8/install_scripts/
- bash> ./linux_install_qhyccd_sdk_driver.sh
+ bash> wget https://www.qhyccd.com/file/repository/publish/SDK/201126/sdk_Arm64_20.11.11.tgz
+ bash> tar -xzvf sdk_Arm64_20.11.11.tgz
+ bash> cd sdk_Arm64_20.11.11/
+ bash> ./install.sh
 ``` 
 
- 
+
 ## BUILD QHYCMD
 
 ```shell

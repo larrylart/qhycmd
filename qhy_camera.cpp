@@ -68,6 +68,7 @@ CQhyCamera::~CQhyCamera( )
 		_LogError("Close QHYCCD failure, error: %d", retVal);
 
 	// release sdk resources
+	
 	retVal = ReleaseQHYCCDResource();
 	if (QHYCCD_SUCCESS == retVal)
 		_LogInfo("SDK resources released.");
