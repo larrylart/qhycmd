@@ -317,11 +317,11 @@ int CAstroImage::SaveFits(  const char* file_name, CQhyCamera* pQhyCamera )
 	//v=2; fits_update_key(fptr, TINT, "NAXIS", &v, description, &status);
 	//fits_update_key(fptr, TINT, "NAXIS1", &onlySizeX, description, &status);
 	//fits_update_key(fptr, TINT, "NAXIS2", &onlySizeY, description, &status);
-	fits_update_key(fptr, TINT, "OFFSET", &pQhyCamera->CHIP_OFFSET, description, &status);
+	fits_update_key(fptr, TINT, "OFFSET", &pQhyCamera->m_nChipOffset, description, &status);
 	fits_update_key(fptr, TINT, "BITPIX", &pQhyCamera->bpp, description, &status);
-	fits_update_key(fptr, TINT, "GAIN", &pQhyCamera->CHIP_GAIN, description, &status);
-	fits_update_key(fptr, TINT, "XBINNING", &pQhyCamera->camBinX, description, &status);
-	fits_update_key(fptr, TINT, "YBINNING", &pQhyCamera->camBinY, description, &status);
+	fits_update_key(fptr, TINT, "GAIN", &pQhyCamera->m_nChipGain, description, &status);
+	fits_update_key(fptr, TINT, "XBINNING", &pQhyCamera->m_nCamBinX, description, &status);
+	fits_update_key(fptr, TINT, "YBINNING", &pQhyCamera->m_nCamBinY, description, &status);
 	
 
 //	fits_update_key(fptr, TINT, keywords, &v, description, &status);
@@ -332,7 +332,7 @@ int CAstroImage::SaveFits(  const char* file_name, CQhyCamera* pQhyCamera )
 	fits_update_key(fptr, TDOUBLE, "SET-TEMP", &f, description, &status);
 	
 	// exposure time float in seconds from microseconds
-	f = (double) pQhyCamera->EXPOSURE_TIME/1000000.0;	
+	f = (double) pQhyCamera->m_nExposureTime/1000000.0;	
 	fits_update_key(fptr, TDOUBLE, "EXPOSURE", &f, description, &status);
 	fits_update_key(fptr, TDOUBLE, "EXPTIME", &f, description, &status);
 	
