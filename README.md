@@ -3,6 +3,8 @@ qhyccd command line camera utility
 
 ## INSTALL QHYCCD SDK
 
+Example for a version qhyccd sdk for ARMV8, please download the relevant sdk from https://www.qhyccd.com/html/prepub/log_en.html#!log_en.md
+
 ```shell
 
  bash> wget https://github.com/qhyccd-lzr/QHYCCD_Linux_New/blob/master/qhyccdsdk-v2.0.11-Linux-Debian-Ubuntu-armv8.tar.gz
